@@ -27,7 +27,7 @@ to change endpoint go to `app/repository/archiveRepository.js` and edit there di
 
 ## Testing
 
-I only implemented some unit tests.
+I only implemented unit tests.
 
 `npm run test-single-run`
 to run the tests once

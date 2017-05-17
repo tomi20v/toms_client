@@ -47,7 +47,10 @@ angular
         }
       });
 
-      var boundReload = angular.bind(vm, vm.reload);
+      // I wrap so it's more testable
+      var boundReload = function() {
+        vm.reload();
+      };
 
       $timeout(boundReload);
       $rootScope.$on('list.reload', boundReload);
